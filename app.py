@@ -18,9 +18,9 @@ formData = cgi.FieldStorage()
 
 
 app = Flask(__name__)
-openai.api_key = "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"
+openai.api_key = "replace with api key"
 non_food = ", and ignore every single one of the non food items and dont even try to incorporate them into the food or the recipe, also generate all nutritonal info."
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'optical-branch-379102-635bb86b79ee.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'replace with currect json'
 
 client = vision.ImageAnnotatorClient()
 image = vision_v1.types.Image()
