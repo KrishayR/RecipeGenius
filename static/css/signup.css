@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(to right,#008374, #e9f0ef);
+    background-size: cover;
+    background-position: center;
+}
+.signUpForm{
+    width: 500px;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    margin: 8% auto 0;
+    /* background: linear-gradient(to right, #008374, #e9f0ef); /
+    /box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);*/
+}
+.signUpForm h1{
+    color:#f85a40;
+    margin-bottom: 30px;
+    width: 100%;
+
+}
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    border: 1px solid #999;
+    outline: none;
+    align-items: center;
+}
+button{
+    color:rgb(19, 235, 156);
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:"Montserrat", sans-serif;
+    margin: 11px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #f85a40;
+}
+a{
+    text-decoration: none;
+}
+.or{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+}

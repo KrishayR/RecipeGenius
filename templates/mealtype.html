@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RecipeGenius</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bfaef0e17e.js" crossorigin="anonymous"></script>
+  <script>
+$(document).ready(function() {
+  $('.button-container .button').click(function() {
+    $('.button-container .button').removeClass('active'); // remove active class from all buttons
+    $(this).addClass('active'); // add active class to clicked button
+  });
+});
+
+
+  </script>
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+  <!-- <link href="../static/css/navbardash.css" rel="stylesheet"> -->
+  <link href="../static/css/mealtype.css" rel="stylesheet">
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center" style = "text-decoration: none">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <br>
+        <h1 style="margin-left: 100px;">RecipeGenius<span>.</span></h1>
+
+      </a>
+      <nav id="navbar" class="navbar" style="text-decoration: none;">
+        <ul style="text-decoration: none;">
+          <li style="margin-left: -300px;" ><a href="/"; style = "padding-top: 30px; margin-left: -10px; text-decoration: none;"; style = "margin-left: 70px;">Home</a></li>
+          <li><a href="/logout"; style = "padding-top:30px; text-decoration: none;"; style = "margin-left: 70px;">Logout</a></li>
+         
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+    <link rel="stylesheet" href="../static/css/navbardash.css">
+  </header><!-- End Header -->
+
+  <!-- =======================================================
+  * Template Name: Impact
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<br><br><br><br><br><br>
+<body style="border: none !important;">
+  <form id="getInfo" style="border: none !important;">
+
+    <div id="entire">
+      <fieldset class="form-group" id="form-group1" style="text-align: center;">
+
+        <div class="dropdown" id="cuisine">
+          <br>
+          <label for="cuisineDrop"> Select Your Cuisine: </label>
+          <br>
+          <select name="cuisine" id="cuisineDrop"> 
+            <option value="mexican">Mexican</option>
+            <option value="northIndian">North Indian</option>
+            <option value="southIndian">South Indian</option>
+            <option value="italian">Italian</option>
+            <option value="chinese">Chinese</option>
+            <option value="japanese">Japanese</option>
+            <option value="korean">Korean</option>
+            <option value="any">Any</option>
+    
+    
+          </select>
+          
+        </div>
+        
+        <div class="button-container">
+          <div class="button" id="btn1">
+            <div class="circle1">
+              <div class="circle2">
+                <div class="text">Breakfast</div>
+              </div>
+            </div>
+          </div>
+          <div class="button" id="btn2">
+            <div class="circle1">
+              <div class="circle2">
+                <div class="text">Lunch</div>
+              </div>
+            </div>
+          </div>
+          <div class="button" id="btn3">
+            <div class="circle1">
+              <div class="circle2">
+                <div class="text">Dinner</div>
+              </div>
+            </div>
+          </div>
+          <div class="button" id="btn4">
+            <div class="circle1">
+              <div class="circle2">
+                <div class="text">Snacks</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <div class="button" id="btn5">
+            <div class="circle1">
+              <div class="circle2">
+                <div class="text">Dessert</div>
+              </div>
+            </div>
+          </div>
+          <div class="button" id="btn6">
+            <div class="circle1">
+              <div class="circle2">
+                <div class="text">Drinks</div>
+              </div>
+            </div>
+          </div>
+          <div class="button" id="btn7">
+            <div class="circle1">
+              <div class="circle2">
+                <div class="text">Appetizer</div>
+              </div>
+            </div>
+          </div>
+          <div class="button" id="btn8">
+            <div class="circle1">
+              <div class="circle2">
+                <div class="text">Any</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  
+
+  
+
+
+    <div style="text-align: center;">
+      <br>
+        <form action="{{ url_for('recipe') }}" method="post" enctype="multipart/form-data">
+          <button id="next-button" type="submit" style="width: 13%;" class="next-btn">
+            Generate Recipe <i class="fas fa-arrow-right"></i>
+        </button>
+        </form>
+
+        
+  </div>
+  
+
+</form>
+
+<script> 
+
+  const buttons = document.querySelectorAll('.button');
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      if (document.querySelectorAll('.button.active') == 1){
+        for (var i = 1; i < 7; i++){
+          if ($("#btn" + i).hasClass("active")){
+            $("#btn" + i).classList.toggle('active');
+          }
+        }
+      }
+      button.classList.toggle('active');
+    });
+  });
+  
+  
+  
+  
+  function submit(event){
+  
+
+  var e = document.getElementById('cuisineDrop');
+  console.log(e.value);
+  var p;
+  var t;
+  var l;
+  var c;
+
+  for (var i = 1; i < 9; i++){
+    if ($("#btn" + i).hasClass("active")){
+      p = document.getElementById("btn" + i);
+      t = p.children[0];
+      l = t.children[0];
+      c = l.children[0];
+      console.log(c.textContent);
+
+      break;
+    }
+  }
+
+  $("#getInfo").remove() 
+    $('body').append('<h1 id="waiting" style="text-align: center;"> Please Wait. Generating Recipe Right Now.... </h1>')
+    setTimeout(reloadSite, 7000)
+  $.ajax({
+    type: "POST",
+    url: "/generate_recipe",
+    data: {mealtype: c.textContent, cuisine: e.value},
+    success: function(response) {
+      console.log(response);
+    },
+    error: function(error) {
+      console.log(error);
+    }
+  });
+}
+
+$('#next-button').click(submit);
+
+
+function reloadSite(){
+
+  $('body').append("<a href='/recipe'><button id='next-button' style='width: 15%;' class='next-btn'> See The Recipe <i class='fas fa-arrow-right'></i> </button></a>");
+
+}
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/css/signup.css">
+    <body>
+    <title>Sign up </title>
+</head>
+        <div class="signUpForm">
+            <h1 style = "color: #f85a40; font-family: 'Montserrat' sans-serif;">Sign up with RecipeGenius here!</h1>
+            <form>
+            <input type="email" class = "input-box" placeholder="Username">
+            <input type="password" class = "input-box" placeholder="Password">
+            <p> <span><input type = "checkbox" required> <a href = "#"; style = "color:#f85a40"> I agree to the terms of service </a> </p>
+                <button type = "button" class = "signup_button"; style = "color: white";> Sign Up</button>
+                <hr>
+                <p class = "or">Or</p>
+                <button type = "button" class = "signup_button"; style = "color:white";>Sign Up Using Google</button>
+                <p>Already signed up with RecipeGenius? Sign in <a href="#"; style = "color: #f85a40;">here</a>!</p>
+
+            </form>
+        </div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to RecipeGenius</title>
+    <link rel="stylesheet" href="../static/css/signup2.css">
+      <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+<body>
+	<header id="header" class="header d-flex align-items-center">
+
+		<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+		  <a href="/" class="logo d-flex align-items-center">
+			<!-- Uncomment the line below if you also wish to use an image logo -->
+			<!-- <img src="assets/img/logo.png" alt=""> -->
+			<h1 style = "padding-left: 160px; margin-top: 20px">RecipeGenius<span>.</span></h1>
+		  </a>
+		  <nav id="navbar" class="navbar">
+			<ul>
+			  <li><a href="/" style = "padding-top: 10px;">Home</a></li>
+			  <li><a href="/login" style = "padding-top: 10px;">Login</a></li>
+			  <li><a href="/signup" style = "padding-top: 10px;">Sign Up</a></li>
+			</ul>
+		  </nav><!-- .navbar -->
+	
+		  <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+		  <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+	
+		</div>
+		<link rel="stylesheet" href="../static/css/navbar.css">
+	  </header><!-- End Header -->
+	  <!-- End Header -->
+<br>
+
+<div class="container" id="container">
+    
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="/signup"><button onclick="location.href = '/signup';">Sign Up</button></a>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="/createaccount" method="post">
+			<h1>Sign Up</h1>
+<br>
+
+			<input type="username"  name="newusername"  placeholder="Username" />
+			<input type="password" name="newpassword" placeholder="Password" />
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-right">
+				<h1>Already have an account?</h1>
+				<p>Log in here!</p>
+				<button class="ghost" id="signUp" onclick="location.href = '/login';">Log In</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+
+    <p>&copy; Copyright <strong><span>RecipeGenius</span></strong>. All Rights Reserved</p> 
+  </footer><!-- End Footer -->
+  
+</body>
+</html>

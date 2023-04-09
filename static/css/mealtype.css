@@ -1,0 +1,97 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+
+body {
+	background-color: #008374;
+	color: #fff;
+	font-family: "Montserrat" sans-serif;
+}
+
+
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+  }
+  
+  .circle1 {
+    position: absolute;
+    width: 190.5px;
+    height: 190.5px;
+    border-radius: 50%;
+    background: #e5543e;
+    box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circle2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #f85a40;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text {
+    font-family: "Montserrat" sans-serif;;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22.4px;
+    color: #FFFFFF;
+  }
+
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    
+    .button {
+    margin: 120px;
+    }
+
+    .button.active .circle1 {
+        background-color: #dcdcdc;
+      }
+      
+      .button.active .circle2 {
+        background-color: #a7a7a7;
+      }
+      
+
+      .next-btn {
+        background-color: white;
+        color: #f85a40;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 120%;
+        width: 8%;
+    }
+    
+    .next-btn:hover {
+        background-color: #f85a40;
+        color: white !important;
+    }

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <header id="header" class="header d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="/" class="logo d-flex align-items-center" style="text-decoration: none">
+                <br>
+                <h1 style="margin-left: 100px;">RecipeGenius<span>.</span></h1>
+            </a>
+            <nav id="navbar" class="navbar" style="text-decoration: none;">
+                <ul style="text-decoration: none;">
+                    <li style="margin-left: -300px;"><a href="/" style="padding-top: 30px; margin-left: -10px; text-decoration: none;" style="margin-left: 70px;">Home</a></li>
+                    <li><a href="/logout" style="padding-top:30px; text-decoration: none;" style="margin-left: 70px;">Logout</a></li>
+                </ul>
+            </nav>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+        <link rel="stylesheet" href="../static/css/navbardash.css">
+    </header>
+    <meta charset="UTF-8">
+    <title>RecipeGenius Upload</title>
+    <script></script>
+    <link rel="stylesheet" href="../static/css/dashboard.css">
+    <script src="https://kit.fontawesome.com/bfaef0e17e.js" crossorigin="anonymous"></script>
+    <div class="header">
+        <br>
+        <br>
+    </div>
+    <title>Upload Image on RecipeGenius</title>
+</head>
+<style>
+    .choose-file-btn {
+        background-color: white;
+        color: #f85a40;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 120%;
+        width: 8%;
+    }
+
+    .choose-file-btn:hover {
+        background-color: #f85a40;
+        color: white;
+    }
+
+    .url-input {
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 120%;
+    }
+    .url-input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 50%;
+    margin: 0 auto; /* center the input */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 120%;
+    }
+
+    img{
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+
+    }
+
+
+</style>
+
+<body>
+    <div style="margin-top: -90px; text-align: center; align-items: center;">
+        <h1 style="font-family: 'Montserrat', sans-serif; color: white; text-align:  center;">Upload a picture of your fridge here.</h1>
+        <p style="font-family: 'Montserrat', sans-serif; color: white; text-align: center;">Our AI will detect all the items in your fridge to use it later on in recipe generation.</p>
+    </div>
+    <br>
+    <div style="display: flex; justify-content: center;">
+        <input type="text" id="urlInput" class="url-input" placeholder="Enter image URL">
+    </div>
+    <br>
+    <button class="choose-file-btn" onclick="loadImage()" style="width: 175px;">Load Image <i class="fas fa-file"></i></button>
+    <br>
+    <div id="imageContainer" style="display: flex; justify-content: center;"></div>
+    <a href="/mealtype" style="text-decoration: none; color: #f85a40;"><button id="nextBtn" style="display: none;" class="next-btn" onclick="uploadImage();">
+        Next <i class="fas fa-arrow-right"></i></a>
+    </button>
+
+    <script>
+        let imageLoaded = false;
+
+        function loadImage() {
+    // Get the URL from the input field
+    const url = document.getElementById('urlInput').value;
+
+    // Create a new image element
+    const img = document.createElement('img');
+    img.src = url;
+
+    // Get the div where you want to display the image
+    const imageContainer = document.getElementById('imageContainer');
+
+    // Clear any previous image
+    imageContainer.innerHTML = '';
+
+    // Append the new image element to the div
+    imageContainer.appendChild(img);
+
+    // Set imageLoaded to true
+    imageLoaded = true;
+
+    // Display the Next button
+    const nextBtn = document.getElementById('nextBtn');
+    nextBtn.style.display = 'block';
+    }
+
+    function uploadImage() {
+  if (!imageLoaded) {
+    // If an image hasn't been loaded, display an error message
+    alert('Please load an image first');
+    return;
+  }
+
+  // Get the URL from the input field
+  const url = document.getElementById('urlInput').value;
+
+  // Send the URL to the server
+  fetch('/upload_image', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ url: url })
+  })
+  .then(response => {
+    // Handle the response from the server
+  })
+  .catch(error => {
+    // Handle any errors
+  });
+}
+
+
+
+    </script>
+
+</body>
