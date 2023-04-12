@@ -1,12 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "optical-branch-379102",
-  "private_key_id": "635bb86b79ee9707e27a29f2ecfdc64a2932d630",
-  "private_key": "-----BEGIN PRIVATE KEY-----n-----END PRIVATE KEY-----\n",
-  "client_email": "recipegenius@optical-branch-379102.iam.gserviceaccount.com",
-  "client_id": "110991271564835011650",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/recipegenius%40optical-branch-379102.iam.gserviceaccount.com"
-}
+Find JSON file when you make a api key for google vision 
